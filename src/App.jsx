@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from './components/pages/LoginPage.jsx';
-import Homepage from './components/pages/Homepage.jsx';
+import Homepage from './components/pages/homepage.jsx';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import AddToCartPage from './components/pages/Addtocart.jsx';
