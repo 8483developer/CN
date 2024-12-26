@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import LoginPage from './components/pages/LoginPage';
-import Homepage from './components/pages/Homepage';
-import Navbar from './components/navbar';
-import Footer from './components/Footer';
-import AddToCartPage from './components/pages/Addtocart';
-import ProductCard from './components/pages/ProductCard';
-import CheckoutPage from './components/pages/checkoutpage';
-import ContactUs from './components/pages/ContactUs';
-import RoomInspiration from './components/pages/RoomInspiration';
-import Categories from './components/Category';
-import AccountPage from './components/pages/Account';
-import { CartProvider } from "./components/CartContext";
+import LoginPage from './components/pages/LoginPage.jsx';
+import Homepage from './components/pages/Homepage.jsx';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import AddToCartPage from './components/pages/Addtocart.jsx';
+import ProductCard from './components/pages/ProductCard.jsx';
+import CheckoutPage from './components/pages/checkoutpage.jsx';
+import ContactUs from './components/pages/ContactUs.jsx';
+import RoomInspiration from './components/pages/RoomInspiration.jsx';
+import Categories from './components/Category.jsx';
+import AccountPage from './components/pages/Account.jsx';
+import { CartProvider } from "./components/CartContext.jsx";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(null); // Start with null to handle loading state
