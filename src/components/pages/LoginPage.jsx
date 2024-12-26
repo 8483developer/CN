@@ -16,6 +16,7 @@ const LoginPage = ({ onLogin }) => {
     e.preventDefault();
     console.log("Form submitted with email:", email, "and password:", password);
 
+    // Replace with your actual authentication logic
     if (email === "user@example.com" && password === "password123") {
       console.log("Login successful");
       onLogin();
@@ -37,7 +38,7 @@ const LoginPage = ({ onLogin }) => {
         </p>
 
         {errorMessage && (
-          <p className="error-message">{errorMessage}</p>
+          <p className="error-message text-red-500">{errorMessage}</p>
         )}
 
         <form onSubmit={handleSubmit}>
