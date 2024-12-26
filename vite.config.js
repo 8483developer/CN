@@ -8,7 +8,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': '/src',
+      '@': '/src', // Adjust this if you use aliases for paths
     },
   },
+  base: '/subfolder/', // If you deploy to a subfolder, adjust the base path
 });
