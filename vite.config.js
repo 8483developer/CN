@@ -1,15 +1,16 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
-    target: 'esnext', // Ensures ES module compatibility
+    target: 'esnext',
   },
   resolve: {
     alias: {
-      '@': '/src', // Adjust this if you use aliases for paths
+      '@': '/src',
     },
   },
-   // If you deploy to a subfolder, adjust the base path
+  // This should match the subfolder for deployment (e.g., GitHub Pages)
 });
